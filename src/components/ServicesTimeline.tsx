@@ -5,10 +5,10 @@ import { CheckCircle2, FileCheck, UserCheck, ClipboardCheck } from "lucide-react
 export default function ServicesTimeline() {
   const data = [
     {
-      title: "01",
+      title: <CheckCircle2 size={24} className="text-accent" />,
       content: (
         <div className="bg-white dark:bg-neutral-900 rounded-2xl p-6 lg:p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
-          <div className="flex items-start gap-4 mb-6">
+          <div className="flex items-start gap-4">
             <div className="p-3 bg-accent/10 rounded-xl">
               <CheckCircle2 size={32} className="text-accent" />
             </div>
@@ -22,25 +22,14 @@ export default function ServicesTimeline() {
               </p>
             </div>
           </div>
-          <div className="relative h-64 rounded-xl overflow-hidden group">
-            <img
-              src="https://images.pexels.com/photos/6863183/pexels-photo-6863183.jpeg?auto=compress&cs=tinysrgb&w=1600"
-              alt="Gestion complète de la paie — bulletins de salaire"
-              width="1600"
-              height="1200"
-              loading="lazy"
-              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
-          </div>
         </div>
       ),
     },
     {
-      title: "02",
+      title: <FileCheck size={24} className="text-accent" />,
       content: (
         <div className="bg-white dark:bg-neutral-900 rounded-2xl p-6 lg:p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
-          <div className="flex items-start gap-4 mb-6">
+          <div className="flex items-start gap-4">
             <div className="p-3 bg-accent/10 rounded-xl">
               <FileCheck size={32} className="text-accent" />
             </div>
@@ -53,25 +42,14 @@ export default function ServicesTimeline() {
               </p>
             </div>
           </div>
-          <div className="relative h-64 rounded-xl overflow-hidden group">
-            <img
-              src="https://images.pexels.com/photos/6863311/pexels-photo-6863311.jpeg?auto=compress&cs=tinysrgb&w=1600"
-              alt="Transmission dématérialisée des déclarations sociales (DSN)"
-              width="1600"
-              height="1200"
-              loading="lazy"
-              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
-          </div>
         </div>
       ),
     },
     {
-      title: "03",
+      title: <UserCheck size={24} className="text-accent" />,
       content: (
         <div className="bg-white dark:bg-neutral-900 rounded-2xl p-6 lg:p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
-          <div className="flex items-start gap-4 mb-6">
+          <div className="flex items-start gap-4">
             <div className="p-3 bg-accent/10 rounded-xl">
               <UserCheck size={32} className="text-accent" />
             </div>
@@ -85,25 +63,14 @@ export default function ServicesTimeline() {
               </p>
             </div>
           </div>
-          <div className="relative h-64 rounded-xl overflow-hidden group">
-            <img
-              src="https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=1600"
-              alt="Assistance RH — contrats de travail et dossiers administratifs"
-              width="1600"
-              height="1200"
-              loading="lazy"
-              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
-          </div>
         </div>
       ),
     },
     {
-      title: "04",
+      title: <ClipboardCheck size={24} className="text-accent" />,
       content: (
         <div className="bg-white dark:bg-neutral-900 rounded-2xl p-6 lg:p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
-          <div className="flex items-start gap-4 mb-6">
+          <div className="flex items-start gap-4">
             <div className="p-3 bg-accent/10 rounded-xl">
               <ClipboardCheck size={32} className="text-accent" />
             </div>
@@ -116,17 +83,6 @@ export default function ServicesTimeline() {
                 redressement.
               </p>
             </div>
-          </div>
-          <div className="relative h-64 rounded-xl overflow-hidden group">
-            <img
-              src="https://images.pexels.com/photos/7688465/pexels-photo-7688465.jpeg?auto=compress&cs=tinysrgb&w=1600"
-              alt="Audit de conformité paie — checklist de contrôle"
-              width="1600"
-              height="1200"
-              loading="lazy"
-              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
           </div>
         </div>
       ),
